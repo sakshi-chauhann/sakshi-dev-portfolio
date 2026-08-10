@@ -209,23 +209,36 @@
     width:100%;
   }
 
-  /* ====== RESPONSIVE HBOX MARGIN ====== */
+  /* ====== FIXED: HERO CONTENT SPACING ====== */
   .hbox {
-    margin-left: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  @media (max-width: 1024px) {
+  /* Desktop: More padding to push from corners */
+  @media (min-width: 861px) {
     .hbox {
-      margin-left: 40px;
+      padding-left: 80px;
+      padding-right: 20px;
     }
   }
 
+  /* Tablet */
+  @media (max-width: 1024px) and (min-width: 861px) {
+    .hbox {
+      padding-left: 40px;
+      padding-right: 20px;
+    }
+  }
+
+  /* Mobile: No extra padding, uses wrap padding */
   @media (max-width: 860px) {
     .hbox {
-      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
-  /* ====== END HBOX MARGIN ====== */
+  /* ====== END FIX ====== */
 
   .eyebrow{
     display:inline-flex; 
