@@ -58,3 +58,5 @@
     });
   }, { threshold: 0.12 });
   revealEls.forEach(el => revealObs.observe(el));
+
+  
