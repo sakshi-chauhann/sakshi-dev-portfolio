@@ -208,9 +208,25 @@
     min-width:0;
     width:100%;
   }
-  .hbox{
-    margin-left: 120px;
+
+  /* ====== RESPONSIVE HBOX MARGIN ====== */
+  .hbox {
+    margin-left: 80px;
   }
+
+  @media (max-width: 1024px) {
+    .hbox {
+      margin-left: 40px;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .hbox {
+      margin-left: 0;
+    }
+  }
+  /* ====== END HBOX MARGIN ====== */
+
   .eyebrow{
     display:inline-flex; 
     align-items:center; 
