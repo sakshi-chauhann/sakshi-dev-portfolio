@@ -151,6 +151,7 @@
   }
   .mobile-menu a.active{ color:var(--teal-deep); }
 
+  /* ========== RESPONSIVE NAV ========== */
   @media (max-width:1024px){
     .wrap{
       padding:0 36px;
@@ -209,36 +210,29 @@
     width:100%;
   }
 
-  /* ====== FIXED: HERO CONTENT SPACING ====== */
+  /* ====== HERO CONTENT - PERFECT SPACING ====== */
+  /* Desktop: Content pushed from left edge */
   .hbox {
-    padding-left: 20px;
+    padding-left: 80px;
     padding-right: 20px;
   }
 
-  /* Desktop: More padding to push from corners */
-  @media (min-width: 861px) {
-    .hbox {
-      padding-left: 80px;
-      padding-right: 20px;
-    }
-  }
-
-  /* Tablet */
-  @media (max-width: 1024px) and (min-width: 861px) {
+  /* Tablet: Less padding */
+  @media (max-width: 1024px) {
     .hbox {
       padding-left: 40px;
       padding-right: 20px;
     }
   }
 
-  /* Mobile: No extra padding, uses wrap padding */
+  /* Mobile: Content uses wrap padding (same as About section) */
   @media (max-width: 860px) {
     .hbox {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
   }
-  /* ====== END FIX ====== */
+  /* ====== END HERO SPACING ====== */
 
   .eyebrow{
     display:inline-flex; 
@@ -431,6 +425,7 @@
     white-space:nowrap;
   }
 
+  /* ========== RESPONSIVE HERO ========== */
   @media (max-width:1024px){
     .hero{
       gap:35px;
