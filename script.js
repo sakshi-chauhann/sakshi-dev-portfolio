@@ -1,4 +1,4 @@
-  // Cascading letter reveal for the hero name
+// Cascading letter reveal for the hero name
   const nameText = "SAKSHI CHAUHAN";
   const nameEl = document.getElementById('animatedName');
   nameEl.textContent = '';
@@ -58,5 +58,3 @@
     });
   }, { threshold: 0.12 });
   revealEls.forEach(el => revealObs.observe(el));
-
-  
